@@ -1,0 +1,26 @@
+services:
+  master:
+    build: .
+    image: parcs-node
+    environment:
+      - ROLE=master
+      - MASTER_HOST=master
+      - EXPECTED_WORKERS=${N:-4}
+    volumes:
+      - ./:/parcs/job
+    networks: [parcs]
+
+  worker:
+    build: .
+    image: parcs-node
+    environment:
+      - ROLE=worker
+      - MASTER_HOST=master
+    depends_on: [master]
+    deploy:
+      replicas: 4
+    networks: [parcs]
+
+networks:
+  parcs:
+    driver: bridge

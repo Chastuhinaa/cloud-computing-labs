@@ -1,0 +1,5 @@
+workers,time_sec,speedup,found
+1,13.775,1.0,help
+2,7.674,1.8,help
+3,5.737,2.4,help
+4,4.414,3.12,help
