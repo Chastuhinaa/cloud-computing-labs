@@ -107,7 +107,7 @@ docker run -p 8080:8080 -e GEMINI_API_KEY=... speech-gemini-poc
 
 ## Слайд 6. Посилання
 
-**GitHub:** https://github.com/<YOUR_USERNAME>/cloud-computing-labs
+**GitHub:** https://github.com/Chastuhinaa/cloud-computing-labs
 (тека `lab2-speech-gemini/`)
 
 Дякую за увагу!

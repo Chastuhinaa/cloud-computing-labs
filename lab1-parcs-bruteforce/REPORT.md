@@ -149,7 +149,7 @@ sudo apt-get update && sudo apt-get install -y docker.io docker-compose-plugin g
 sudo usermod -aG docker $USER && newgrp docker
 
 # 5. Забрати код і підняти кластер
-git clone https://github.com/<YOUR_USERNAME>/cloud-computing-labs.git
+git clone https://github.com/Chastuhinaa/cloud-computing-labs.git
 cd cloud-computing-labs/lab1-parcs-bruteforce
 docker compose up --build --scale worker=4
 
@@ -190,6 +190,4 @@ gcloud compute instances delete parcs-vm --zone=europe-central2-a
 
 ## 7. Посилання на GitHub
 
-**Репозиторій з кодом:** https://github.com/<YOUR_USERNAME>/cloud-computing-labs
-
-> Замінити `<YOUR_USERNAME>` на свій логін після `git push`.
+**Репозиторій з кодом:** https://github.com/Chastuhinaa/cloud-computing-labs
